@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Engine Hosting HTML Documentation Template</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <style type="text/css" media="screen">
+        table, hr, .box { margin-bottom:25px; }
+        p { margin: 5px 0 5px 0;}
+        .box p { margin-bottom:10px; }
+        pre { background-color: #F7F8F6; padding: 20px 0px 0px 0px; }
+        img {border: 1px solid #BCBEC0;}
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+       <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+       
+         <div class="header-block">
+             <div>
+                <p>HTML Template Documentation</p>
+                <h1 class="center">Engine Hosting </h1>
+            </div>
+            <img src="assets/images/fruitfulcode.png">
+         </div>
+
+        <hr>
+        <div class="menu-column">
+         
+          <ol class="alpha">
+              <li><span class="menu-item" href="#about">About Engine Hosting</span></li>
+              <li><span class="menu-item" href="#installation">Installation</span></li>
+              <li><span class="menu-item" href="#structure">Folder Structure</span></li>
+              <li><span class="menu-item" href="#elements">Main Elements</span>
+                  <ul>
+                      <li><span class="menu-item" href="#slider">Slider</span></li>
+                      <li><span class="menu-item" href="#header-footer">Header &amp; Footer</span></li>
+                      <li><span class="menu-item" href="#colors">Variant of colors</span></li>
+                      <li><span class="menu-item" href="#owlcarousel">OwlCarousel</span></li>
+                      <li><span class="menu-item" href="#pricing-list">Pricing List</span></li>
+                      <li><span class="menu-item" href="#table">Table</span></li>
+                      <li><span class="menu-item" href="#contact-icon">Contact Icon</span></li>
+                      <li><span class="menu-item" href="#video">Video Pop Up</span></li>
+                  </ul>
+              </li>
+              <li><span class="menu-item" href="#sources-and-credits">Sources and Credits</span></li>
+              <li><span class="menu-item" href="#contacts">Contacts</span></li>
+          </ol>
+          
+         
+        </div>
+        <div class="content">
+        <div class="content-block active">
+            <h3 id="about"><strong>About Engine Hosting</strong></h3>
+            <br>
+            <p>Engine Hosting – new unique, modern, fully responsive HTML theme, based on Bootstrap 3.3.6 created using HTML and CSS3. <br>
+                Can be used for charitable organizations and organizations for the protection of nature.</p>
+            <hr>
+        </div>
+         <div class="content-block">
+            <h3 id="installation"><strong>Installation</strong></h3>
+            <br>
+            <div style="padding: 30px; background: red;"><h3 style="color: #fff">Important!</h3></div>
+            <br>
+           <p>In order to get JS loading data you need to install <strong>localhost server</strong> or your computer must have
+        internet access. To install the localhost server You can use <a href="http://www.wampserver.com" target="blank">WAMP</a>.
+        Then you need to:</p>
+    <ul>
+        <li>Copy your files into <code>*wamp/www</code></li>
+        <li>Run <strong>WAMP</strong>. This will start your localhost server.</li>
+        <li>Open <strong>browser</strong> and in URL type <code>localhost/enginehosting</code> (or other path)</li>
+    </ul>
+
+            <hr>
+        </div>
+        <div class="content-block">
+          <h3 id="structure"><strong>Folder Structure</strong></h3>
+           </br>
+          <ul>
+        <li><strong>Engine Hosting</strong>
+            <ul>
+                <li><strong>HTML Files</strong></li>
+                <li><strong>assets</strong>
+                    <ul>                      
+                        <li><strong>css</strong> - CSS style sheets</li>
+                        <li><strong>fonts</strong> - Font Awesome font</li>
+                        <li><strong>img</strong> - Images</li>
+                        <li><strong>js</strong> - JS script files</li>
+                    </ul>
+                </li>
+                <li><strong>documentation</strong> - This documentation</li>
+            </ul>
+        </li>
+    </ul>
+              </li>
+          </ul>
+          <hr>
+        </div>
+        <div class="content-block">
+        <h3 id="slider"><strong>Slider</strong><a class="back2top" href="#top">top</a></h3>
+        <br>
+        <img src="assets/images/slider.jpg">
+        <br>
+        <br>
+        <br>
+<pre style="font-size:12px;">
+&lt;div class="base-slider owl-carousel owl-theme bg-gray"&gt;
+    &lt;div class="item"&gt;
+        &lt;img src="assets/images/bg-test.png" alt="slider"&gt;
+        &lt;div class="inside"&gt;
+            &lt;h2&gt;Best Web Hosting For Your Website&lt;/h2&gt;
+            &lt;p&gt;get best speed for your website. dont loose more clients.&lt;/p&gt;
+            &lt;a href="service-page.html" class="custom-btn"&gt;Get Started Now&lt;/a&gt;
+        &lt;/div&gt;&lt;!--inside--&gt;
+    &lt;/div&gt;
+    &lt;div class="item"&gt;
+        &lt;img src="assets/images/bg-test.png" alt="slider"&gt;
+        &lt;div class="inside"&gt;
+            &lt;h2&gt;Best Web Hosting For Your Website&lt;/h2&gt;
+            &lt;p&gt;get best speed for your website. dont loose more clients.&lt;/p&gt;
+            &lt;a href="service-page.html" class="custom-btn"&gt;Get Started Now&lt;/a&gt;
+        &lt;/div&gt;&lt;!--inside--&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<br>
+<br>
+<h6><strong>Js code located at file dist/assets/js/main.js:</strong></h6>
+<br>
+<pre>
+$('.base-slider').owlCarousel({
+  loop: true,
+  margin: 0,
+  nav: true,
+  navText: ["&lt;img src='assets/images/arrow-left.png'&gt;","&lt;img src='assets/images/arrow-right.png'&gt;"],
+  dots: false,
+  item: 1,
+  responsive:{
+      0:{
+          items:1
+      },
+      600:{
+          items:1
+      },
+      1000:{
+          items:1
+      }
+  }
+});
+</pre>
+
+        <hr>
+        </div>
+        <div class="content-block">
+        <h3 id="header-footer"><strong>Header and Footer</strong><a class="back2top" href="#top">top</a></h3>
+        <br>
+        <br>
+        <h6>Example for header:</h6>
+        <img src="assets/images/header.jpg" alt="header">
+        <br>
+        <br>
+        <h6>HTML:</h6>
+        <pre style="">
+&lt;header&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-md-2"&gt;
+          &lt;div class="logo"&gt;&lt;a href="index.html"&gt;&lt;img src="assets/images/logo.svg" alt="logo"&gt;&lt;/a&gt;&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="col-md-7"&gt;
+          &lt;ul class="menu"&gt;
+              &lt;li&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="about.html"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+              &lt;li class="children"&gt;
+                  &lt;span class="menu-item" href="#"&gt;Hosting&lt;/a&gt;
+                  &lt;ul class="sub-menu"&gt;
+                      &lt;li&gt;&lt;a href="service-page.html"&gt;Service page 1&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="service-page-light.html"&gt;Service page 2&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="service-page-dark.html"&gt;Service page 3&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="service-page-images.html"&gt;Service page 4&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;&lt;!--sub-menu--&gt;
+              &lt;/li&gt;&lt;!--children--&gt;
+              &lt;li class="children"&gt;
+                  &lt;a href="user-interface.html"&gt;Pages&lt;/a&gt;
+                  &lt;ul class="sub-menu"&gt;
+                      &lt;li&gt;&lt;a href="404.html"&gt;404 Page&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="order.html"&gt;Order&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="user-interface.html"&gt;User Interface&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;&lt;!--sub-menu--&gt;
+              &lt;/li&gt;
+              &lt;li&gt;&lt;a href="blog-list.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+              &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class="col-md-3"&gt;
+          &lt;div class="button-header"&gt;
+              &lt;a href="login.html" class="custom-btn login"&gt;Login&lt;/a&gt;
+              &lt;a href="sign-up.html" class="custom-btn"&gt;Sign Up&lt;/a&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+    </pre>
+        <br>
+        <h6>Example for footer:</h6>
+        <img src="assets/images/footer.jpg" alt="header">
+    <h6>HTML:</h6> 
+    <pre>
+&lt;footer&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="widget-footer"&gt;
+        &lt;h4&gt;Product&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="service-page.html"&gt;Web Hosting&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="service-page.html"&gt;Shared Hosting&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="service-page.html"&gt;Dedicated Server&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="service-page.html"&gt;Private Cloud&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!--widget-footer--&gt;
+    &lt;div class="widget-footer"&gt;
+        &lt;h4&gt;Company&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="about.html"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="service-page.html"&gt;Careers&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="blog-list.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!--widget-footer--&gt;
+    &lt;div class="widget-footer"&gt;
+        &lt;h4&gt;Support&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="service-page.html"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="contact.html"&gt;Contact Us&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!--widget-footer--&gt;
+    &lt;div class="widget-footer"&gt;
+        &lt;h4&gt;Contact Us&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;span class="menu-item" href="#"&gt;+123-333-123&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;span class="menu-item" href="#"&gt;support@enginehosting.com&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!--widget-footer--&gt;
+    &lt;div class="widget-footer last"&gt;
+        &lt;a href="index.html"&gt;&lt;img src="assets/images/logo.svg" alt="logo"&gt;&lt;/a&gt;
+        &lt;p&gt;There are many variations of passages of Lorem Ipsum &lt;/p&gt;
+        &lt;ul class="social-icon"&gt;
+          &lt;li&gt;&lt;span class="menu-item" href="#"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;span class="menu-item" href="#"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;span class="menu-item" href="#"&gt;&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;&lt;!--widget-footer--&gt;
+    &lt;div class="copyright"&gt;
+        &lt;p&gt;&copy; Copyright 2017 Hosting, All Rights Reserved&lt;/p&gt;
+    &lt;/div&gt;&lt;!--copyright--&gt;
+  &lt;/div&gt;
+&lt;/footer&gt;
+    </pre>
+
+        <hr>
+        </div>
+        <div class="content-block">
+          <h3 id="colors"><strong>Variant of colors</strong><a class="back2top" href="#top">top</a></h3>
+          <br>
+          <p>If you need a light version of the site then connect <code>dist/assets/css/light.css</code> the file in <strong><code> &lt;head&gt;</code></strong></p>
+
+          <br>
+          <br>
+
+          <hr>
+        </div>
+        <div class="content-block">
+        <h3 id="owlcarousel"><strong>Owl carousel</strong><a class="back2top" href="#top">top</a></h3>
+        <br>
+        <img src="assets/images/owl-carousel.jpg">
+        <h6>HTML head</h6>
+    <pre>
+  &lt;link rel="stylesheet" href="dist/assets/css/lib/owl.carousel.min.css"&gt;
+    </pre>
+        <br>
+        <h6>HTML:</h6>
+    <pre>
+&lt;div class="partner-slider owl-carousel owl-theme"&gt;
+  &lt;div class="item animated bounceInLeft delay-250"&gt;&lt;span class="menu-item" href="#"&gt;&lt;img src="" alt="partner"&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;div class="item animated bounceInLeft delay-500"&gt;&lt;span class="menu-item" href="#"&gt;&lt;img src="" alt="partner"&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;div class="item animated bounceInLeft delay-750"&gt;&lt;span class="menu-item" href="#"&gt;&lt;img src="" alt="partner"&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;div class="item animated bounceInLeft delay-1000"&gt;&lt;span class="menu-item" href="#"&gt;&lt;img src="" alt="partner"&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;div class="item animated bounceInLeft delay-1250"&gt;&lt;span class="menu-item" href="#"&gt;&lt;img src="" alt="partner"&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+        <br>
+        <h6>Before &lt;/body&gt; tag ends:</h6>
+    <pre>
+  &lt;script src="dist/assets/js/lib/owl.carousel.min.js"&gt;&lt;/script&gt;
+  &lt;script src="dist/assets/js/main.js"&gt;&lt;/script&gt;
+    </pre>
+        <br>
+        <h6>Js code located at file <em>assets/js/myScript.js</em>:</h6>
+    <pre>
+  $('.partner-slider').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      autoplay: true,
+      dots: false,
+      item: 5,
+      responsive:{
+          0:{
+              items:2
+          },
+          600:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  });
+    </pre>
+        <p>Owl-carousel settings can be found  <a href="https://owlcarousel2.github.io/OwlCarousel2/" target="blank">here</a></p>
+
+       <hr>
+     </div>
+     <div class="content-block">
+    <h3 id="pricing-list"><strong>Pricing List</strong><a class="back2top" href="#top">top</a></h3>
+    <br>
+    <img src="assets/images/pricing.jpg" alt="pricing">
+    <br>
+    <br>
+    <br>
+    <h6>HTML:</h6>
+    <pre>
+&lt;div class="pricing-table"&gt;
+  &lt;div class="container"&gt;
+    &lt;h2 class="title-head"&gt;Linux Reseller Hosting&lt;/h2&gt;
+    &lt;p&gt;High Performance cPanel WHM Reseller Hosting in Europe&lt;/p&gt;
+    &lt;ul class="pricing-list"&gt;
+      &lt;li&gt;
+        &lt;div class="images"&gt;&lt;img src="assets/images/server.svg" alt="server"&gt;&lt;/div&gt;
+        &lt;h5&gt;Dedicated Server&lt;/h5&gt;
+        &lt;p&gt;There are many variations of passages of Lorem Ipsum available.&lt;/p&gt;
+        &lt;span&gt;&lt;b&gt;From&lt;/b&gt;&lt;/span&gt;
+        &lt;div class="price"&gt;80$&lt;span&gt;/month&lt;/span&gt;&lt;/div&gt;
+        &lt;a href="service-page.html" class="custom-btn"&gt;Get Started Now&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class="images"&gt;&lt;img src="assets/images/hosting.svg" alt="hosting"&gt;&lt;/div&gt;
+        &lt;h5&gt;Reseller Hosting&lt;/h5&gt;
+        &lt;p&gt;There are many variations of passages of Lorem Ipsum available.&lt;/p&gt;
+        &lt;span&gt;&lt;b&gt;From&lt;/b&gt;&lt;/span&gt;
+        &lt;div class="price"&gt;160$&lt;span&gt;/month&lt;/span&gt;&lt;/div&gt;
+        &lt;a href="service-page.html" class="custom-btn"&gt;Get Started Now&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class="images"&gt;&lt;img src="assets/images/hosting2.svg" alt="hosting2"&gt;&lt;/div&gt;
+        &lt;h5&gt;Shared Hosting&lt;/h5&gt;
+        &lt;p&gt;There are many variations of passages of Lorem Ipsum available.&lt;/p&gt;
+        &lt;span&gt;&lt;b&gt;From&lt;/b&gt;&lt;/span&gt;
+        &lt;div class="price"&gt;9$&lt;span&gt;/month&lt;/span&gt;&lt;/div&gt;
+        &lt;a href="service-page.html" class="custom-btn"&gt;Get Started Now&lt;/a&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;div class="images"&gt;&lt;img src="assets/images/vps.svg" alt="vpn"&gt;&lt;/div&gt;
+        &lt;h5&gt;VPS Hosting&lt;/h5&gt;
+        &lt;p&gt;There are many variations of passages of Lorem Ipsum available.&lt;/p&gt;
+        &lt;span&gt;&lt;b&gt;From&lt;/b&gt;&lt;/span&gt;
+        &lt;div class="price"&gt;82$&lt;span&gt;/month&lt;/span&gt;&lt;/div&gt;
+        &lt;a href="service-page.html" class="custom-btn"&gt;Get Started Now&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+    <hr>
+  </div>
+  <div class="content-block">
+    <h3 id="table"><strong>Table</strong><a class="back2top" href="#top">top</a></h3>
+    <br>
+    <br>
+    <img src="assets/images/table.jpg" alt="table">
+    <br>
+    <br>
+    <br>
+    <h6>HTML:</h6>
+    <pre>
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;td class="text-left"&gt;Features&lt;/td&gt;
+          &lt;td&gt;Basic&lt;/td&gt;
+          &lt;td&gt;Premium&lt;/td&gt;
+          &lt;td&gt;Reseller&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left background"&gt;RAM&lt;/td&gt;
+      &lt;td class="background"&gt;8 GB&lt;/td&gt;
+      &lt;td class="background"&gt;12 GB&lt;/td&gt;
+      &lt;td class="background"&gt;24 GB&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left"&gt;Storage SSD&lt;/td&gt;
+      &lt;td&gt;25 GB&lt;/td&gt;
+      &lt;td&gt;55 GB&lt;/td&gt;
+      &lt;td&gt;100 GB&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left background"&gt;SAS Storage&lt;/td&gt;
+      &lt;td class="background"&gt;50 GB&lt;/td&gt;
+      &lt;td class="background"&gt;132 GB&lt;/td&gt;
+      &lt;td class="background"&gt;200 GB&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left"&gt;CPU Cores&lt;/td&gt;
+      &lt;td&gt;2&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;16&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left background"&gt;Brandwidth&lt;/td&gt;
+      &lt;td class="background"&gt;2 TB&lt;/td&gt;
+      &lt;td class="background"&gt;8 TB&lt;/td&gt;
+      &lt;td class="background"&gt;12 TB&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="offset-inside"&gt;
+      &lt;td class="text-left"&gt;&lt;b&gt;Available OS&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left background"&gt;Ubuntu&lt;/td&gt;
+      &lt;td class="background"&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+      &lt;td class="background"&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+      &lt;td class="background"&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left"&gt;Windows Server 2008&lt;/td&gt;
+      &lt;td&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="offset-inside"&gt;
+      &lt;td class="text-left"&gt;&lt;b&gt;Support&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left background"&gt;Phone Support&lt;/td&gt;
+      &lt;td class="background"&gt;-&lt;/td&gt;
+      &lt;td class="background"&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+      &lt;td class="background"&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left"&gt;Live Chat&lt;/td&gt;
+      &lt;td&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="offset-inside"&gt;
+      &lt;td class="text-left"&gt;&lt;b&gt;More Features&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left background"&gt;Some Feature 1&lt;/td&gt;
+      &lt;td class="background"&gt;100 Mbps&lt;/td&gt;
+      &lt;td class="background"&gt;100 Mbps&lt;/td&gt;
+      &lt;td class="background"&gt;100 Mbps&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left"&gt;Some Feature 2&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;&lt;img src="assets/images/done.png" alt="done"&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="offset-inside"&gt;
+      &lt;td class="text-left"&gt;&lt;b&gt;Price&lt;/b&gt;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+      &lt;td&gt;&nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left background"&gt;Monthly&lt;/td&gt;
+      &lt;td class="background"&gt;80$/Month&lt;/td&gt;
+      &lt;td class="background"&gt;80$/Month&lt;/td&gt;
+      &lt;td class="background"&gt;80$/Month&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+      &lt;td class="text-left"&gt;Yearly&lt;/td&gt;
+      &lt;td&gt;50$/Month&lt;/td&gt;
+      &lt;td&gt;50$/Month&lt;/td&gt;
+      &lt;td&gt;50$/Month&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+    <hr>
+  </div>
+  <div class="content-block">
+    <h3 id="contact-icon"><strong>Contact Icons</strong><a class="back2top" href="#top">top</a></h3>
+    <br>
+    <br>
+    <img src="assets/images/icon-contact.jpg" alt="table">
+    <br>
+    <br>
+    <br>
+    <h6>HTML:</h6>
+    <pre>
+&lt;div class="bg-form"&gt;
+  &lt;div class="container"&gt;
+    &lt;h2 class="text-center"&gt;Contact Us&lt;/h2&gt;
+    &lt;p class="text-center"&gt;We’re here to help.&lt;/p&gt;
+    &lt;div class="info-block-contact"&gt;
+      &lt;div class="row"&gt;
+          &lt;div class="col-md-6 col-sm-6 col-xs-12"&gt;
+              &lt;div class="inside left"&gt;
+                  &lt;div class="images"&gt;&lt;img src="assets/images/phone.png" alt="phone"&gt;&lt;/div&gt;
+                  &lt;h4&gt;Have questions? Call Us.&lt;/h4&gt;
+                  &lt;span class="menu-item" href="#"&gt;+1 888 231 1211&lt;/a&gt;
+              &lt;/div&gt;&lt;!--inside--&gt;
+          &lt;/div&gt;
+          &lt;div class="col-md-6 col-sm-6 col-xs-12"&gt;
+              &lt;div class="inside right"&gt;
+                  &lt;div class="images"&gt;&lt;img src="assets/images/mail.svg" alt="mail"&gt;&lt;/div&gt;
+                  &lt;h4&gt;Email Us&lt;/h4&gt;
+                  &lt;span class="menu-item" href="#"&gt;hello@enginehosting.com&lt;/a&gt;
+              &lt;/div&gt;&lt;!--inside--&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="row"&gt;
+          &lt;div class="col-md-6 col-sm-6 col-xs-12"&gt;
+              &lt;div class="inside left"&gt;
+                  &lt;div class="images"&gt;&lt;img src="assets/images/address.svg" alt="address"&gt;&lt;/div&gt;
+                  &lt;h4&gt;Address&lt;/h4&gt;
+                  &lt;span&gt;514 S. Magnolia St.&lt;br&gt;Orlando, FL 32806&lt;/span&gt;
+              &lt;/div&gt;&lt;!--inside--&gt;
+          &lt;/div&gt;
+          &lt;div class="col-md-6 col-sm-6 col-xs-12"&gt;
+              &lt;div class="inside right"&gt;
+                  &lt;div class="images"&gt;&lt;img src="assets/images/like.svg" alt="like"&gt;&lt;/div&gt;
+                  &lt;h4&gt;Follow Us&lt;/h4&gt;
+                  &lt;ul class="social-icon"&gt;
+                      &lt;li&gt;&lt;span class="menu-item" href="#"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;span class="menu-item" href="#"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;span class="menu-item" href="#"&gt;&lt;i class="fa fa-youtube"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+              &lt;/div&gt;
+          &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+    <hr>
+  </div>
+  <div class="content-block">
+    <h3 id="video"><strong>Video Pop Up</strong><a class="back2top" href="#top">top</a></h3>
+    <br>
+    <br>
+    <img src="assets/images/video.jpg" alt="table">
+    <br>
+    <br>
+    <br>
+    <h6>HTML:</h6>
+    <pre>
+&lt;div class="video"&gt;
+  &lt;img src="assets/images/video.jpg" alt="video"&gt;
+  &lt;button data-toggle="modal" data-target=".bs-example-modal-lg"&gt;&lt;img src="" alt="play"&gt;&lt;/button&gt;
+  &lt;div class="modal fade bs-example-modal-lg" tabindex="-1"&gt;
+    &lt;div class="modal-dialog modal-lg"&gt;
+      &lt;div class="modal-content"&gt;
+        &lt;iframe height="490" src="https://www.youtube-nocookie.com/embed/rx5zCr7452I"&gt;&lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+        <hr>
+      </div>
+      <div class="content-block">
+        <h3 id="sources-and-credits"><strong>Sources and Credits</strong><a class="back2top" href="#top">top</a></h3>
+            <br>
+            <ul>
+                <li>Web design - <a href="https://fruitfulcode.com/">Fruitful code</a></li>
+                <li>Bootstrap Framework – <a href="http://getbootstrap.com/">http://getbootstrap.com</a></li>
+                <li>jQuery - <a href="http://code.jquery.com/jquery-2.1.1.js">http://code.jquery.com/jquery-2.1.1.js</a></li>
+                <li>OwlCarousel - <a href="https://owlcarousel2.github.io/OwlCarousel2">https://owlcarousel2.github.io/OwlCarousel2</a></li>
+                <li>Animations - <a href="http://jackonthe.net/css3animateit/examples/">http://jackonthe.net/css3animateit/examples/</a></li>
+                <li>Icons <a href="http://fortawesome.github.io/Font-Awesome/" target="blank">Font Awesome</a></li>
+                <li>Counter <a href="https://codepen.io/kevincote/pen/RLaQoZ?q=Counter+on+Scroll&limit=all&type=type-pens">https://codepen.io/kevincote/pen/RLaQoZ?q=Counter+on+Scroll&limit=all&type=type-pens</a></li>
+            </ul>
+
+            <p class="append-bottom alt large"><strong>Fruitful code</strong></p>
+            <!-- <p><span class="menu-item" href="#toc">Go To Table of Contents</a></p> -->
+        </div>
+         <div class="content-block">
+            <h3 id="contacts"><strong>Contacts</strong></h3><a class="back2top" href="#top">back to top</a>
+            <br>
+            
+            <div>
+                <p class="prepend-top">
+                    <strong>
+                    Created: 15/01/2018<br>
+                    By: Fruitful code<br>
+                    Email: <a href="mailto:mail@fruitfulcode.com">mail@fruitfulcode.com</a>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->   
+              <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/fruitfulcode" target="blank">here</a>. Thanks so much!</p>
+            </div>   
+          
+        </div>
+        <hr class="space">
+      </div>
+    </div><!-- end div .container -->
+</body>
+</html>
