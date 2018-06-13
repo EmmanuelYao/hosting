@@ -18,3 +18,7 @@ fonts - Font Awesome font
 img - Images
 js - JS script files
 documentation - This documentation
+
+More info see the folder documentation
+
+thank!
